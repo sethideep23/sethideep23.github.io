@@ -10,7 +10,7 @@ firebase.initializeApp(config);
 //Create database object
 var database = firebase.database();
 
-var ref = firebase.database().child("data");
+var ref = database.ref("data");
 
 function pushData() {
   ref.push(getDataFromInput("input"));
